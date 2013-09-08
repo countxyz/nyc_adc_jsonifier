@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
 
+$LOAD_PATH.unshift File.expand_path '../lib', _FILE_
+
 require_relative 'json_assembler'
 
 assembler = JsonAssembler.new

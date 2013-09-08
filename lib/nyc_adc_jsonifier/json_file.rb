@@ -1,11 +1,14 @@
 #!/usr/bin/env ruby
 
-class JsonFile
+module NycAdcJsonifier
 
-  attr_reader :filename, :pretty_json
+  class JsonFile
 
-  def initialize(filename, pretty_json)
-    @filename     = filename
-    @pretty_json  = pretty_json
+    attr_reader :filename, :pretty_json
+
+    def initialize(filename, pretty_json)
+      @filename     = filename
+      @pretty_json  = pretty_json
+    end
   end
 end
