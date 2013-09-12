@@ -77,8 +77,8 @@ module NycAdcJsonifier
 
 		def clean_site_content(content)
 			content.gsub!(/[\r\n]/, ' ')
-			content.sub!(/^.*?[\.!\?](?:\s+|$)/, '')
 			content.gsub!(/\s+/, ' ')
+			content.sub!(/\s/, '')
 		end
 	end
 end
