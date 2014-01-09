@@ -6,7 +6,7 @@ require 'nyc_adc_jsonifier/json_assembler'
 
 assembler = NycAdcJsonifier::JsonAssembler.new
 ARGV.each do |csv_file|
-	assembler.get_csv_data(csv_file)
+  assembler.get_csv_data(csv_file)
 end
 
 assembler.get_site_content
